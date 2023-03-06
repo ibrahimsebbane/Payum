@@ -38,7 +38,12 @@ return array(
     ),
 );
 ```
-
+Php 8 : 
+'providers' => [
+	.....
+	Payum\LaravelPackage\PayumServiceProvider::class,
+	.....
+]
 Configure builder. You are free to use other builder's methods.
 
 In Laravel 4, add the following to bootstrap/start.php or other place where you can use App::resolving method.
